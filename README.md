@@ -6,7 +6,6 @@ Offline phone-number formatter built with Electron. Paste any messy number, pick
 - ✂️ Cleans separators, spaces, weird symbols
 - 🧠 Handles `(0)` national trunk codes & trims leading zeros safely
 - 🌍 Country picker with type-to-search; always returns a full `+<countrycode><number>`
-- 🔒 Secure renderer: `contextIsolation`, `sandbox`, `nodeIntegration: false`
 - 🖥️ Hardware acceleration disabled by default to avoid GPU glitches
 
 ## Run (dev)
