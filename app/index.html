@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phone Formatter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">📱 PhoneForge</div>
+  </header>
+
+  <main class="container">
+    <section class="card" role="application" aria-labelledby="title">
+      <h1 id="title" class="title">Paste phone number</h1>
+      <p class="subtitle">Supports international formats — choose a country and click <b>Get</b>.</p>
+
+      <!-- input -->
+      <div class="field">
+        <label for="phone-input" class="label">Phone</label>
+        <input id="phone-input" class="input" type="text" placeholder="Paste the number here" autocomplete="tel">
+      </div>
+
+      <!-- country -->
+      <div class="field">
+        <label for="country-select" class="label">Country</label>
+        <select id="country-select" class="select">
+          <!-- Africa -->
+          <option value="+213">🇩🇿 Algeria</option>
+          <option value="+244">🇦🇴 Angola</option>
+          <option value="+27">🇿🇦 South Africa</option>
+          <option value="+234">🇳🇬 Nigeria</option>
+          <option value="+251">🇪🇹 Ethiopia</option>
+          <option value="+20">🇪🇬 Egypt</option>
+          <option value="+263">🇿🇼 Zimbabwe</option>
+          <option value="+260">🇿🇲 Zambia</option>
+          <option value="+221">🇸🇳 Senegal</option>
+
+          <!-- Asia -->
+          <option value="+971">🇦🇪 UAE</option>
+          <option value="+93">🇦🇫 Afghanistan</option>
+          <option value="+880">🇧🇩 Bangladesh</option>
+          <option value="+60">🇲🇾 Malaysia</option>
+          <option value="+91">🇮🇳 India</option>
+          <option value="+62">🇮🇩 Indonesia</option>
+          <option value="+81">🇯🇵 Japan</option>
+          <option value="+82">🇰🇷 South Korea</option>
+          <option value="+86">🇨🇳 China</option>
+          <option value="+84">🇻🇳 Vietnam</option>
+          <option value="+95">🇲🇲 Myanmar</option>
+          <option value="+98">🇮🇷 Iran</option>
+          <option value="+964">🇮🇶 Iraq</option>
+
+          <!-- Europe -->
+          <option value="+43">🇦🇹 Austria</option>
+          <option value="+355">🇦🇱 Albania</option>
+          <option value="+32">🇧🇪 Belgium</option>
+          <option value="+359">🇧🇬 Bulgaria</option>
+          <option value="+387">🇧🇦 Bosnia & Herzegovina</option>
+          <option value="+420">🇨🇿 Czech Republic</option>
+          <option value="+45">🇩🇰 Denmark</option>
+          <option value="+49">🇩🇪 Germany</option>
+          <option value="+30">🇬🇷 Greece</option>
+          <option value="+36">🇭🇺 Hungary</option>
+          <option value="+354">🇮🇸 Iceland</option>
+          <option value="+353">🇮🇪 Ireland</option>
+          <option value="+39">🇮🇹 Italy</option>
+          <option value="+352">🇱🇺 Luxembourg</option>
+          <option value="+371">🇱🇻 Latvia</option>
+          <option value="+370">🇱🇹 Lithuania</option>
+          <option value="+423">🇱🇮 Liechtenstein</option>
+          <option value="+356">🇲🇹 Malta</option>
+          <option value="+373">🇲🇩 Moldova</option>
+          <option value="+382">🇲🇪 Montenegro</option>
+          <option value="+31">🇳🇱 Netherlands</option>
+          <option value="+47">🇳🇴 Norway</option>
+          <option value="+48">🇵🇱 Poland</option>
+          <option value="+351">🇵🇹 Portugal</option>
+          <option value="+40">🇷🇴 Romania</option>
+          <option value="+7">🇷🇺 Russia</option>
+          <option value="+381">🇷🇸 Serbia</option>
+          <option value="+421">🇸🇰 Slovakia</option>
+          <option value="+386">🇸🇮 Slovenia</option>
+          <option value="+34">🇪🇸 Spain</option>
+          <option value="+46">🇸🇪 Sweden</option>
+          <option value="+41">🇨🇭 Switzerland</option>
+          <option value="+44">🇬🇧 United Kingdom</option>
+          <option value="+380">🇺🇦 Ukraine</option>
+          <option value="+216" selected>🇹🇳 Tunisia</option>
+
+          <!-- North America -->
+          <option value="+1">🇺🇸 USA</option>
+          <option value="+52">🇲🇽 Mexico</option>
+          <option value="+1">🇨🇦 Canada</option>
+          <option value="+503">🇸🇻 El Salvador</option>
+          <option value="+502">🇬🇹 Guatemala</option>
+
+          <!-- South America -->
+          <option value="+54">🇦🇷 Argentina</option>
+          <option value="+55">🇧🇷 Brazil</option>
+          <option value="+56">🇨🇱 Chile</option>
+          <option value="+57">🇨🇴 Colombia</option>
+          <option value="+591">🇧🇴 Bolivia</option>
+          <option value="+58">🇻🇪 Venezuela</option>
+          <option value="+593">🇪🇨 Ecuador</option>
+          <option value="+507">🇵🇦 Panama</option>
+          <option value="+595">🇵🇾 Paraguay</option>
+
+          <!-- Oceania -->
+          <option value="+61">🇦🇺 Australia</option>
+          <option value="+64">🇳🇿 New Zealand</option>
+          <option value="+679">🇫🇯 Fiji</option>
+          <option value="+680">🇵🇼 Palau</option>
+          <option value="+675">🇵🇬 Papua New Guinea</option>
+
+          <!-- Middle East -->
+          <option value="+962">🇯🇴 Jordan</option>
+          <option value="+966">🇸🇦 Saudi Arabia</option>
+          <option value="+974">🇶🇦 Qatar</option>
+          <option value="+965">🇰🇼 Kuwait</option>
+        </select>
+      </div>
+
+      <!-- actions -->
+      <div class="actions">
+        <button id="format-btn" class="btn primary">Get</button>
+        <button id="clear-btn" class="btn ghost" type="button">Clear</button>
+      </div>
+
+      <!-- output -->
+      <div class="field">
+        <label for="output" class="label">Result</label>
+        <textarea id="output" class="textarea" rows="2" placeholder="Formatted number will appear here"></textarea>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
