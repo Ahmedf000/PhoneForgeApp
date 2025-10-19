@@ -24,9 +24,10 @@
     ],
     "asar": true,
     "win": {
-      "target": ["portable"],
+      "target": [
+        "portable"
+      ],
       "icon": "build/icon.ico",
-      "sign": false,
       "signAndEditExecutable": false
     }
   },
