@@ -16,6 +16,7 @@
     "directories": {
       "buildResources": "build",
       "output": "dist"
+      
     },
     "files": [
       "main.js",
